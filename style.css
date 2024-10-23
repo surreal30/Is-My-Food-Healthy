@@ -1,0 +1,144 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    color: #e1f5fe;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+input[type="text"] {
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #1a73e8;
+    outline: none;
+}
+
+button {
+    padding: 1rem 2.5rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1559c1;
+}
+
+/* Results Section */
+.results-container {
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.results-container .product-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.results-container .nutrition-score {
+    font-size: 1.3rem;
+    color: #1a73e8;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.results-container .ingredients {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.results-container .ingredients ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results-container .ingredients li {
+    background-color: #f0f0f5;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.results-container .ingredients li:hover {
+    background-color: #e0e0e5;
+}
+
+/* Footer */
+footer {
+    background-color: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
